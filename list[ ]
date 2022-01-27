@@ -46,9 +46,9 @@ print(x)
 l6 = [10,20,30,40,50,60,70]
 i = 0
 n = len(l6)
-while i < n and len(l) != 0:   # removing all element one by one with loop
+while i < n and len(l6) != 0:   # removing all element one by one with loop
     print("current index value:", i)
     print("current n value:", n)
-    print("the element removeed:" , l.pop(i))
+    print("the element removeed:" , l6.pop(i))
 print(l6)
 
