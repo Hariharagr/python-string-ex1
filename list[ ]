@@ -30,7 +30,7 @@ print(l3)
 
 l4 = [10,10,10,10,20,30,40,50]
 x= int(input("enter the string to get removed"))
-while true:
+while True:
     if x in l4:
         l4.remove(x)  # removing with loop
     else:
@@ -39,7 +39,7 @@ print(l4)
 
 l5 = [10,20,30,40,50,60,70,80]
 x = l.pop()   # removing the last element and printing the return element
-y = l.pop(60)
+y = l.pop(6)
 print(l5)
 print(x)
 
