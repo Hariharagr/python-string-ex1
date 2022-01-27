@@ -7,3 +7,63 @@ for row in l:
 
 l1 = [x*x*x for x in range(1,10000) if x*x*x%2 == 0]
 print(l1)    #list comprehension
+l = []
+for x in range(1,21):
+    if x %2 ==0:
+        l.append(x*x)
+print(l)
+
+#in comprehension
+l1 = [x*x for x in range (1,21) if x % 2==0]
+print(l1)
+
+#print the first word
+l2 =['bala','kumar','venki','chiran']
+l3 = [word[0] for word in l2]
+print(l)
+
+#create a list with out duplicates present in num2
+num1 = [10,20,30,40,50]
+num2 = [40,50,60,70,80,90]
+num3 = []
+for n in num1:
+    if n not in num2:
+        num3.append(n)
+print(num3)
+
+# in comprehension
+num3 = [n for n in num1 if n not in num2]
+print(num3)
+
+#creating nested list from string
+s = 'colletion concept of python'
+words = s.split()
+l4 = []
+for word in words:
+    l4.append([word,len(word)])
+print(l)
+
+# in comprehension
+l5 = [[word, len(word)] for word in words]
+print(l5)
+
+# to lower case
+s1 = 'LEARNING PYTHON AFTER JAVA'
+word1 = s1.split()
+l6 = [[word2.lower(),len(word2)] for word2 in word1 ]
+print(l6)
+l7  = [[word3.title(),len(word3)] for word3 in word1]
+print(l7)
+
+#getting vowels from the given string
+string1= input('enter any string to get the vowels')
+vowels = ['a','e','i','o','u']
+found = []
+for v in vowels:
+    if v in string1:
+        found.append(v)
+print(found)
+
+# in comprehension
+l7 = [ v for v in vowels if v in string1]
+print(l7)
