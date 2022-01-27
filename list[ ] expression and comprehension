@@ -1,0 +1,9 @@
+l= [[10,20,30],[40,50,60],[70,80,90]]
+print('element in matrix style:')
+for row in l:
+    for column in row:       # list element in matrix style
+        print (column,end=' ')
+    print()
+
+l1 = [x*x*x for x in range(1,10000) if x*x*x%2 == 0]
+print(l1)    #list comprehension
