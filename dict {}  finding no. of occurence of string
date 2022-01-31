@@ -1,0 +1,12 @@
+s = ("In Java string is basically an object that represents sequence of char values")
+d ={}
+for ch in s:
+    if ch in d:
+        d[ch] = d[ch]+1
+    else:
+       d[ch] =1
+print(d)
+for k,v in sorted(d.items()):
+    print("{} occurs {} times".format(k,v))
+
+
